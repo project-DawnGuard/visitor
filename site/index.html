@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Smart Visitors — Visitor pages</title>
+<style>
+  :root { color-scheme: dark; --bg:#070b12; --panel:#0d1420; --line:#1d2a3d; --text:#e8eef7; --muted:#93a3b8; --teal:#2dd4bf; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; padding:24px;
+    background: radial-gradient(700px 400px at 20% 0%, rgba(45,212,191,.14), transparent 60%), var(--bg);
+    color:var(--text); font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { width:min(620px,100%); background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:38px; }
+  .pill { display:inline-block; font-size:12px; letter-spacing:.8px; text-transform:uppercase; color:var(--teal);
+    background:rgba(45,212,191,.12); border:1px solid rgba(45,212,191,.28); padding:6px 11px; border-radius:999px; font-weight:650; }
+  h1 { font-size:34px; letter-spacing:-1px; margin:18px 0 10px; }
+  p { color:var(--muted); line-height:1.6; margin:0 0 10px; }
+  .note { font-size:13.5px; border-top:1px solid var(--line); padding-top:18px; margin-top:24px; }
+  .links { display:flex; gap:12px; flex-wrap:wrap; margin-top:24px; }
+  a { color:var(--teal); text-decoration:none; font-size:14px; border:1px solid var(--line); padding:10px 14px; border-radius:10px; }
+  a:hover { background:rgba(255,255,255,.04); }
+  a.primary { background:var(--teal); color:#04121a; border-color:transparent; font-weight:650; }
+</style>
+</head>
+<body>
+<main>
+  <span class="pill">deployment target ready</span>
+  <h1>Visitor pages</h1>
+  <p>Single-use invite links, consent and photo upload, plus the time-limited QR pass page. No account needed.</p>
+  <p>This GitHub Pages site is provisioned and connected to the build pipeline. The static frontend for this role lands here next; until then the working single-origin app is the live demo.</p>
+  <div class="links">
+    <a class="primary" href="https://project-dawnguard.github.io/">Project home</a>
+    <a href="https://github.com/project-DawnGuard/visitor">Repository</a>
+  </div>
+  <p class="note">Smart Visitors — self-hosted visitor access system. No Aadhaar, no biometrics; opaque QR passes and hash-chained audit logs.</p>
+</main>
+</body>
+</html>
